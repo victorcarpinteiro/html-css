@@ -9,6 +9,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         thead, tfoot{
             background-color: rgb(65, 65, 65);
@@ -19,18 +20,37 @@
             padding: 10px;
            
         }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(65, 65, 65);
+
+        }
         .num{
             text-align: right;
         }
-        
+        caption{
+            font-size: 1.5em;
+            background-color: lightgrey;
+            font-weight: bold;
+            padding: 10px;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        tbody>tr:nth-child(2n-1){
+            background-color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -171,10 +191,23 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">210.147.125</td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe tempore voluptatem molestias quaerat voluptatibus tempora earum labore autem quae dignissimos natus aliquid consequatur sint assumenda, consequuntur facilis. Aliquid, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iste est itaque libero corporis quas amet natus dignissimos nobis, ad voluptatibus asperiores enim explicabo error cupiditate numquam illo ducimus deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quis ea libero, non asperiores, aut, nulla enim rem perspiciatis ab facere ducimus veniam. Quaerat ut modi aut velit, fugiat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolorem amet atque nobis voluptatem facilis tempora, adipisci et vitae, sequi, saepe aliquid distinctio. Repellendus esse eaque odit voluptate quisquam!</p>
 </body>
 </html>
