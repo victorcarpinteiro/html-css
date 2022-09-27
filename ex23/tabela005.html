@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorindo Colunas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+        th,td{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        thead{
+            /* background-color: grey;
+            color: white; */
+        }
+        #cnome{
+            background-image: linear-gradient(tho bottom, grey 20%, rgb(174, 0, 255));
+            color: white;
+            
+        }
+        #cidade{
+            background-color: blueviolet;
+            border: 5px solid green;
+        }
+        #csexo{
+            background-color: rgb(43, 226, 43);
+            border: 5px solid green;
+        }
+        div#tabela1{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabela1">
+        <table>
+        
+            <colgroup>
+                <col id="cnome">
+                <col id="cidade" span="2">
+                <col id="csexo">
+                <col id="cprof">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Victor</td>
+                    <td>26</td>
+                    <td>Masculino</td>
+                    <td>Financeiro</td>
+                </tr>
+                <tr>
+                    <td>Stefany</td>
+                    <td>26</td>
+                    <td>Feminino</td>
+                    <td>Administrativo</td>
+                </tr>
+                <tr>
+                    <td>Danilo</td>
+                    <td>31</td>
+                    <td>Masculino</td>
+                    <td>Juridico</td>
+                </tr>
+                <tr>
+                    <td>Lucio</td>
+                    <td>65</td>
+                    <td>Masculino</td>
+                    <td>Empresário</td>
+                </tr>
+                <tr>
+                    <td>Victor</td>
+                    <td>26</td>
+                    <td>Masculino</td>
+                    <td>Financeiro</td>
+                </tr>
+                <tr>
+                    <td>Stefany</td>
+                    <td>26</td>
+                    <td>Feminino</td>
+                    <td>Administrativo</td>
+                </tr>
+                <tr>
+                    <td>Danilo</td>
+                    <td>31</td>
+                    <td>Masculino</td>
+                    <td>Juridico</td>
+                </tr>
+                <tr>
+                    <td>Lucio</td>
+                    <td>65</td>
+                    <td>Masculino</td>
+                    <td>Empresário</td>
+                </tr>
+                <tr>
+                    <td>Victor</td>
+                    <td>26</td>
+                    <td>Masculino</td>
+                    <td>Financeiro</td>
+                </tr>
+                <tr>
+                    <td>Stefany</td>
+                    <td>26</td>
+                    <td>Feminino</td>
+                    <td>Administrativo</td>
+                </tr>
+                <tr>
+                    <td>Danilo</td>
+                    <td>31</td>
+                    <td>Masculino</td>
+                    <td>Juridico</td>
+                </tr>
+                <tr>
+                    <td>Lucio</td>
+                    <td>65</td>
+                    <td>Masculino</td>
+                    <td>Empresário</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
