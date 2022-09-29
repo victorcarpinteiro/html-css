@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #tela{
+            margin: auto;
+            display: block;
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+        ul{
+            columns: 3;
+        }
+        ul>li{
+            background-color: cadetblue;
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            color: transparent;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque eveniet porro facilis pariatur magnam. Vitae inventore eum, perspiciatis mollitia provident aliquam iusto quisquam adipisci quasi in aperiam sapiente molestias deleniti?</p>
+    <ul>
+        <li><a href="paginas-extras/pag01.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag02.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag03.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia provident fugit reiciendis nostrum accusantium reprehenderit dignissimos aliquam obcaecati eveniet iusto ea, possimus, officiis mollitia laboriosam accusamus doloremque. Id, non sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rerum accusamus maiores iusto dolorum magni sequi accusantium nostrum voluptates soluta, cupiditate dignissimos! Veritatis laudantium ut asperiores. Sunt consequatur facilis neque!</p>
+    <iframe id="tela" name="frame" frameborder="0" srcdoc="<h1>Clique em uma das opções acima</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque eveniet porro facilis pariatur magnam. Vitae inventore eum, perspiciatis mollitia provident aliquam iusto quisquam adipisci quasi in aperiam sapiente molestias deleniti?</p>">
+        <p>Seu navegador não é compatível !</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque delectus modi voluptates consequuntur tempora ea quasi autem commodi. Minus quisquam at nesciunt aut laboriosam reiciendis, rem inventore consequatur porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae in odit animi voluptatum? Cupiditate expedita nam est? A, corrupti! Autem voluptatibus modi ipsa soluta itaque facere architecto blanditiis eius?</p>
+</body>
+</html>
