@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário 01</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            border-radius: 5px;
+            background-color: rgb(121, 22, 22);
+            color: white;
+            font-weight: bold;
+        }
+        body{
+            background-color: azure;
+        }
+        form{
+            border: 2px solid black;
+            padding: 10px;
+            background-color: wheat;
+        }
+    </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="nome">Nome: </label> 
-            <input type="text" name="nome" id="nome"><p>
-        <p><label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="sobrenome"></p>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome"> </p>
+        <p><label for="sobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><label for="senha">Senha:</label><input type="password" name="senha" id="senha"></p>
         <input type="submit" value="Enviar">
     </form>
 </body>
