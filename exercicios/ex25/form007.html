@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 07</title>
+</head>
+<body>
+    <h1>Novos Formulários</h1>
+    <form action="#" method="get">
+
+        <p>
+            <label for="est">Cond. CECAP:</label>
+            <select name="est" id="est">
+
+                <option value="" selected>--Escolha uma opção--</option>
+                <optgroup label="Lado centro Comercial">
+                    <option value="SP">São Paulo</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+
+                <optgroup label="Lado Clube das Mães">
+                    <option value="Rj">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="BA">Bahia</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                </optgroup>
+
+                <optgroup label="CDHU">
+                    <option value="TO">Tocatíns</option>
+                    <option value="GO">Goias</option>
+
+                </optgroup>
+            </select>
+        
+        
+        </p>
+        <p>
+            <label for="and">Andar/lado:</label>
+            <input type="text" name="and" id="and" list="listand">
+            <datalist id="listand">
+                <option >1º andar Sul</option>
+                <option >1º andar Norte</option>
+                <option >2º andar Sul</option>
+                <option >2º andar norte</option>
+                <option >3º andar Sul</option>
+                <option >3º andar Norte</option>
+            </datalist>
+
+        </p>
+        <p>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="5" 
+            maxlength="15"
+            placeholder="Digite sua Mensagem..."></textarea>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+</body>
+</html>
