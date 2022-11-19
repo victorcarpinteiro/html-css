@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding: 0; 
+}
+header{
+    text-align:center;
+    margin: 10px;
+}
+menu{
+    display: none;
+}
+section>h1{
+    text-align: center;
+    margin: 10px;
+}
+section>p{
+    text-align: justify;
+    line-height: 1.5em;
+}
+main::after{
+    content: "Este artigo foi impresso em www.folhadeguarulhos.com.br/esportes";
+}
