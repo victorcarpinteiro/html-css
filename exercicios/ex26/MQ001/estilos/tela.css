@@ -17,16 +17,21 @@ header{
     text-align: center;
     padding: 10px;
 }
-menu{
+#icmenu{
+    cursor: pointer;
+    font-size: 2em;
+}
+menu#mm{
     background-color: #7a0000;
     padding: 5px;
+    display: block;
 }
 li{
     color: white;
     background-color: #880f0fd8;
-    display: inline-block;
-    width: 90px;
+    display: block;
     text-align: center;
+    border-bottom: 1px solid white;
 }
 li:hover{
     background-color: #0000b1b4;
